@@ -42,9 +42,9 @@ public class App
         Person person2 = new Person("Gera", 45);
         Person person3 = new Person("Viktor",14);
 
-        session.save(person1);
-        session.save(person2);
-        session.save(person3);
+        session.persist(person1);
+        session.persist(person2);
+        session.persist(person3);
     }
 
 }
