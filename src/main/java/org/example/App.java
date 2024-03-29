@@ -25,11 +25,19 @@ public class App
             session.beginTransaction();
             // указываем сущность, с которым работаем и указыаем id нашей сущности в БД
             // ищет по первичному ключу
-            //Person person = session.get(Person.class, 1);
+//            Person person = session.get(Person.class, 3);
+//            System.out.println(person.getPerson_name() + ", " + person.getAge());
+//
+//            person.setAge(44);
+//            session.merge(person);  //update
+////            addPersonToDB(session);
+//            session.remove(person);
 
-            addPersonToDB(session);
+            Person person = new Person("Semen",23);
+            session.persist(person);
 
             session.getTransaction().commit();  // закрываем транзакцию
+            System.out.println(person.getPerson_id());
         }finally {
             // закрываем фабрику в любом случае, даже если произойдет ошибка
             sessionFactory.close();
