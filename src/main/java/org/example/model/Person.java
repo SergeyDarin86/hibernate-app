@@ -1,9 +1,6 @@
 package org.example.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity // помечает именно те классы, которые связаны с БД. Классы должны иметь пустой конструктор
 @Table(name = "person") // в нашем случае можно не указывать, т.к. имена совпадают
@@ -11,6 +8,10 @@ public class Person {
 
     @Id
     @Column(name = "person_id")
+    // данная аннотация говорит hibernate, чтобы он не трогал это поле,
+    // потому что оно генерируется автоматически
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer person_id;
 
     @Column(name = "person_name")
@@ -22,18 +23,13 @@ public class Person {
     public Person() {
     }
 
-    public Person(Integer person_id, String person_name, Integer age) {
-        this.person_id = person_id;
+    public Person(String person_name, Integer age) {
         this.person_name = person_name;
         this.age = age;
     }
 
     public Integer getPerson_id() {
         return person_id;
-    }
-
-    public void setPerson_id(Integer person_id) {
-        this.person_id = person_id;
     }
 
     public String getPerson_name() {
