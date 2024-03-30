@@ -33,7 +33,13 @@ public class AppForRelations {
 
 //            createNewItemForCustomer(3, session);
 
-            createNewCustomerWithItem(session);
+//            createNewCustomerWithItem(session);
+
+//            deleteItemsForCustomer(3,session);
+
+//            deleteCustomerById(2,session);
+
+            updateCustomerForItem(4, session);
 
             session.getTransaction().commit();
         } finally {
@@ -60,6 +66,30 @@ public class AppForRelations {
         customer.setItems(new ArrayList<>(Collections.singletonList(item)));
         session.persist(customer);
         session.persist(item);
+    }
+
+    public static void deleteItemsForCustomer(Integer customerId, Session session){
+        Customer customer = session.get(Customer.class,customerId);
+        customer.getItems().stream().forEach(item -> session.remove(item));
+        // снова применяем хорошую практику, чтобы было правильное состояние кэша
+        customer.getItems().clear();
+    }
+
+    public static void deleteCustomerById(Integer customerId, Session session){
+        Customer customer = session.get(Customer.class, customerId);
+        session.remove(customer);
+        customer.getItems().forEach(item -> item.setCustomer(null));
+    }
+
+    public static void updateCustomerForItem(Integer updatedCustomerId, Session session){
+        Customer customer = session.get(Customer.class, updatedCustomerId);
+        Item item = session.get(Item.class, 5);
+
+        // удаление старого владельца у товара (если он есть)
+        //        item.getCustomer().getItems().remove(item);
+
+        item.setCustomer(customer);
+        customer.getItems().add(item);
     }
 
 }

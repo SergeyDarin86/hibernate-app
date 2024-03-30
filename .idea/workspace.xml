@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление запросов на изменение, удаление данных из БД с помощью HQL">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Item.java" afterDir="false" />
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление новых сущностей для связи Many-To-Many">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +49,22 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.AppForRelations">
+  <component name="RunManager" selected="Application.AppForMovies">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="hibernate-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppForMovies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AppForMovies" />
       <module name="hibernate-app" />
       <extension name="coverage">
         <pattern>
@@ -77,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppForMovies" />
         <item itemvalue="Application.AppForRelations" />
         <item itemvalue="Application.App" />
       </list>
@@ -94,7 +109,8 @@
       <workItem from="1711648948713" duration="3474000" />
       <workItem from="1711736947966" duration="4910000" />
       <workItem from="1711792569229" duration="7554000" />
-      <workItem from="1711806050332" duration="4577000" />
+      <workItem from="1711806050332" duration="9331000" />
+      <workItem from="1711828387304" duration="2334000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -138,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711799108245</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавление новых сущностей для связи Many-To-Many">
+      <created>1711817886628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711817886628</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +186,7 @@
     <MESSAGE value="Замена deprecated-метода session.save() на persist()" />
     <MESSAGE value="Изменение и удаление данных в БД" />
     <MESSAGE value="Добавление запросов на изменение, удаление данных из БД с помощью HQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление запросов на изменение, удаление данных из БД с помощью HQL" />
+    <MESSAGE value="Добавление новых сущностей для связи Many-To-Many" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление новых сущностей для связи Many-To-Many" />
   </component>
 </project>
