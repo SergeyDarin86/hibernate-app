@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Замена deprecated-метода session.save() на persist()">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Изменение и удаление данных в БД">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,8 @@
       <updated>1711646570243</updated>
       <workItem from="1711646571641" duration="2356000" />
       <workItem from="1711648948713" duration="3474000" />
-      <workItem from="1711736947966" duration="4807000" />
+      <workItem from="1711736947966" duration="4910000" />
+      <workItem from="1711792569229" duration="5735000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711740336084</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Изменение и удаление данных в БД">
+      <created>1711741862052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711741862052</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +137,7 @@
     <MESSAGE value="1) Создание сущности, создание фабрики" />
     <MESSAGE value="1) Запись данных в БД с помощью Hibernate&#10;2) Добавление аннотации для автоматической генерации ID" />
     <MESSAGE value="Замена deprecated-метода session.save() на persist()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Замена deprecated-метода session.save() на persist()" />
+    <MESSAGE value="Изменение и удаление данных в БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменение и удаление данных в БД" />
   </component>
 </project>
