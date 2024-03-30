@@ -82,7 +82,7 @@ public class App
     }
 
     public static void deletePerson(Session session){
-        session.createMutationQuery("DELETE Person where age = 23").executeUpdate();
+        session.createMutationQuery("DELETE Person where age = 14").executeUpdate();
     }
 
 }

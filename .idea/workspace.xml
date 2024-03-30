@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Изменение и удаление данных в БД">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление запросов на изменение, удаление данных из БД с помощью HQL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AppForRelations">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="hibernate-app" />
@@ -60,8 +62,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppForRelations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AppForRelations" />
+      <module name="hibernate-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppForRelations" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -77,7 +93,8 @@
       <workItem from="1711646571641" duration="2356000" />
       <workItem from="1711648948713" duration="3474000" />
       <workItem from="1711736947966" duration="4910000" />
-      <workItem from="1711792569229" duration="5735000" />
+      <workItem from="1711792569229" duration="7554000" />
+      <workItem from="1711806050332" duration="4577000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -114,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711741862052</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавление запросов на изменение, удаление данных из БД с помощью HQL">
+      <created>1711799108245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711799108245</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +162,7 @@
     <MESSAGE value="1) Запись данных в БД с помощью Hibernate&#10;2) Добавление аннотации для автоматической генерации ID" />
     <MESSAGE value="Замена deprecated-метода session.save() на persist()" />
     <MESSAGE value="Изменение и удаление данных в БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменение и удаление данных в БД" />
+    <MESSAGE value="Добавление запросов на изменение, удаление данных из БД с помощью HQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление запросов на изменение, удаление данных из БД с помощью HQL" />
   </component>
 </project>
