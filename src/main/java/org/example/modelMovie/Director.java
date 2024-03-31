@@ -25,10 +25,9 @@ public class Director {
     public Director() {
     }
 
-    public Director(String directorName, Integer age, List<Movie> movies) {
+    public Director(String directorName, Integer age) {
         this.directorName = directorName;
         this.age = age;
-        this.movies = movies;
     }
 
     public Integer getId() {
