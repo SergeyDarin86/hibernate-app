@@ -21,9 +21,8 @@ public class Item {
     public Item() {
     }
 
-    public Item(String itemName, Customer customer) {
+    public Item(String itemName) {
         this.itemName = itemName;
-        this.customer = customer;
     }
 
     public Integer getItemId() {

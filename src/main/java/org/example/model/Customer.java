@@ -1,7 +1,9 @@
 package org.example.model;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Cascade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -48,6 +50,9 @@ public class Customer {
     }
 
     @OneToMany(mappedBy = "customer")
+    @Cascade(value = {
+            org.hibernate.annotations.CascadeType.PERSIST,
+            org.hibernate.annotations.CascadeType.MERGE})
     private List<Item>items;
 
     public List<Item> getItems() {
@@ -56,6 +61,15 @@ public class Customer {
 
     public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    //рефакторинг кода
+    // процесс связывания товара и человека
+    public void addItem(Item item){
+        if (this.items == null)
+            this.items = new ArrayList<>();
+        this.items.add(item);
+        item.setCustomer(this);
     }
 
     @Override

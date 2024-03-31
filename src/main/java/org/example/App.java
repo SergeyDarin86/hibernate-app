@@ -34,7 +34,7 @@ public class App
 //            person.setAge(44);
 //            session.merge(person);  //update
 ////            addPersonToDB(session);
-//            session.remove(person);  //
+//            session.remove(person);  // delete
 
 //            Person person = new Person("Semen",23);
 //            session.persist(person);

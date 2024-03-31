@@ -28,9 +28,9 @@ public class AppForMovies {
             showSingleMovie(4, session);
             showDirectorOfMovie(4,session);
 //            createNewMovieForDirector(5,session);
-//            createNewDirectorWithNewMovie(session);
+            createNewDirectorWithNewMovie(session);
 //            changeDirectorForMovie(13,session);
-            deleteMovieForDirector(5,session);
+//            deleteMovieForDirector(5,session);
 
             //
             session.getTransaction().commit();
@@ -71,12 +71,13 @@ public class AppForMovies {
     }
 
     public static void createNewDirectorWithNewMovie(Session session){
-        Director director = new Director("Danila Kozlov",43);
-        Movie movie = new Movie("Leviathan",2017,director);
+        Director director = new Director("Test Director",56);
+        Movie movie = new Movie("Terminator",2000,director);
 
         director.setMovies(new ArrayList<>(Collections.singletonList(movie)));
+        // после настройки каскадирования достаточно сохранить только сущность "director"
         session.persist(director);
-        session.persist(movie);
+//        session.persist(movie);
     }
 
     public static void changeDirectorForMovie(Integer movieId, Session session){

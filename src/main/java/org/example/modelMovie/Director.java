@@ -1,6 +1,8 @@
 package org.example.modelMovie;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Cascade;
+//import org.hibernate.annotations.Cascade;
 
 import java.util.List;
 
@@ -19,7 +21,9 @@ public class Director {
     @Column(name = "age")
     private Integer age;
 
-    @OneToMany(mappedBy = "director")
+    @OneToMany(mappedBy = "director",cascade = CascadeType.PERSIST)
+//    @Cascade(value = org.hibernate.annotations.CascadeType.PERSIST) // еще один способ использовать каскадирование
+    @Cascade(value = {org.hibernate.annotations.CascadeType.PERSIST, org.hibernate.annotations.CascadeType.MERGE})
     private List<Movie> movies;
 
     public Director() {
