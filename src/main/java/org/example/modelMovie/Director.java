@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.Cascade;
 //import org.hibernate.annotations.Cascade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -23,7 +24,10 @@ public class Director {
 
     @OneToMany(mappedBy = "director",cascade = CascadeType.PERSIST)
 //    @Cascade(value = org.hibernate.annotations.CascadeType.PERSIST) // еще один способ использовать каскадирование
-    @Cascade(value = {org.hibernate.annotations.CascadeType.PERSIST, org.hibernate.annotations.CascadeType.MERGE})
+    @Cascade(value = {
+            org.hibernate.annotations.CascadeType.PERSIST,
+            org.hibernate.annotations.CascadeType.MERGE
+    })
     private List<Movie> movies;
 
     public Director() {
@@ -32,6 +36,13 @@ public class Director {
     public Director(String directorName, Integer age) {
         this.directorName = directorName;
         this.age = age;
+    }
+
+    public void addMovie(Movie movie){
+        if (this.movies == null)
+            this.movies = new ArrayList<>();
+        this.movies.add(movie);
+        movie.setDirector(this);
     }
 
     public Integer getId() {

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Работа с удалением, добавлением, редактированием">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление каскадирования">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForRelations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.AppForRelations">
+  <component name="RunManager" selected="Application.AppForMovies">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="hibernate-app" />
@@ -92,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppForRelations" />
         <item itemvalue="Application.AppForMovies" />
+        <item itemvalue="Application.AppForRelations" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -112,7 +109,8 @@
       <workItem from="1711792569229" duration="7554000" />
       <workItem from="1711806050332" duration="9331000" />
       <workItem from="1711828387304" duration="2629000" />
-      <workItem from="1711882760798" duration="7670000" />
+      <workItem from="1711882760798" duration="7712000" />
+      <workItem from="1711980356468" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711884968517</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавление каскадирования">
+      <created>1711912134615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711912134615</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +210,7 @@
     <MESSAGE value="Добавление новых сущностей для связи Many-To-Many" />
     <MESSAGE value="Добавление сущностей Director и Movie" />
     <MESSAGE value="Работа с удалением, добавлением, редактированием" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с удалением, добавлением, редактированием" />
+    <MESSAGE value="Добавление каскадирования" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление каскадирования" />
   </component>
 </project>

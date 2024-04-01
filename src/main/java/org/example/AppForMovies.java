@@ -23,14 +23,17 @@ public class AppForMovies {
             session.beginTransaction();
             //
 
-            showSingleDirectorById(2, session);
-            showMoviesByDirector(2, session);
-            showSingleMovie(4, session);
-            showDirectorOfMovie(4,session);
-//            createNewMovieForDirector(5,session);
-            createNewDirectorWithNewMovie(session);
+//            showSingleDirectorById(2, session);
+//            showMoviesByDirector(2, session);
+//            showSingleMovie(4, session);
+//            showDirectorOfMovie(4,session);
+////            createNewMovieForDirector(5,session);
+//            createNewDirectorWithNewMovie(session);
 //            changeDirectorForMovie(13,session);
 //            deleteMovieForDirector(5,session);
+
+//            createNewMovieForDirector(9,session);
+            createNewDirectorWithNewMovies(session);
 
             //
             session.getTransaction().commit();
@@ -63,21 +66,29 @@ public class AppForMovies {
     }
 
     public static void createNewMovieForDirector(Integer directorId, Session session){
+        //новый способ сохранения связанных сущностей
         Director director = session.get(Director.class,directorId);
-        Movie movie = new Movie("Omen",2003,director);
-
-        session.persist(movie);
-        director.getMovies().add(movie);
+        director.addMovie(new Movie("Omen2",2012));
+        session.persist(director);
     }
 
-    public static void createNewDirectorWithNewMovie(Session session){
-        Director director = new Director("Test Director",56);
-        Movie movie = new Movie("Terminator",2000,director);
+    //старое решение
+//    public static void createNewDirectorWithNewMovie(Session session){
+//        Director director = new Director("Test Director",56);
+//        Movie movie = new Movie("Terminator",2000,director);
+//
+//        director.setMovies(new ArrayList<>(Collections.singletonList(movie)));
+//        // после настройки каскадирования достаточно сохранить только сущность "director"
+//        session.persist(director);
+//    }
 
-        director.setMovies(new ArrayList<>(Collections.singletonList(movie)));
-        // после настройки каскадирования достаточно сохранить только сущность "director"
+    // новый способ добавления
+    public static void createNewDirectorWithNewMovies(Session session){
+        Director director = new Director("Sergio Dallini", 77);
+        director.addMovie(new Movie("Evil street",2020));
+        director.addMovie(new Movie("Amazing day",2021));
+
         session.persist(director);
-//        session.persist(movie);
     }
 
     public static void changeDirectorForMovie(Integer movieId, Session session){

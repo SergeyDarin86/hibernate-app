@@ -25,10 +25,9 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(String movieName, Integer yearOfProduction, Director director) {
+    public Movie(String movieName, Integer yearOfProduction) {
         this.movieName = movieName;
         this.yearOfProduction = yearOfProduction;
-        this.director = director;
     }
 
     public Integer getMovieId() {
