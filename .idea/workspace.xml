@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление каскадирования">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelMovie/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,9 @@
       <workItem from="1711806050332" duration="9331000" />
       <workItem from="1711828387304" duration="2629000" />
       <workItem from="1711882760798" duration="7712000" />
-      <workItem from="1711980356468" duration="1222000" />
+      <workItem from="1711980356468" duration="2067000" />
+      <workItem from="1712057247127" duration="628000" />
+      <workItem from="1712061158195" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711912134615</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist">
+      <created>1711981785147</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981785147</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +219,7 @@
     <MESSAGE value="Добавление сущностей Director и Movie" />
     <MESSAGE value="Работа с удалением, добавлением, редактированием" />
     <MESSAGE value="Добавление каскадирования" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление каскадирования" />
+    <MESSAGE value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
   </component>
 </project>
