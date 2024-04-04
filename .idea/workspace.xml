@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавлены сущности для практики: School.java и SchoolDirector">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.AppForMovies">
+  <component name="RunManager" selected="Application.AppForSchool">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="hibernate-app" />
@@ -86,8 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppForSchool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AppForSchool" />
+      <module name="hibernate-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppForSchool" />
         <item itemvalue="Application.AppForMovies" />
         <item itemvalue="Application.AppForRelations" />
         <item itemvalue="Application.App" />
@@ -111,7 +126,9 @@
       <workItem from="1711882760798" duration="7712000" />
       <workItem from="1711980356468" duration="2067000" />
       <workItem from="1712057247127" duration="628000" />
-      <workItem from="1712061158195" duration="353000" />
+      <workItem from="1712061158195" duration="1060000" />
+      <workItem from="1712215903307" duration="748000" />
+      <workItem from="1712216665014" duration="3515000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -190,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711981785147</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Добавлены сущности для практики: School.java и SchoolDirector">
+      <created>1712061782916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712061782916</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +244,7 @@
     <MESSAGE value="Работа с удалением, добавлением, редактированием" />
     <MESSAGE value="Добавление каскадирования" />
     <MESSAGE value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
+    <MESSAGE value="Добавлены сущности для практики: School.java и SchoolDirector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены сущности для практики: School.java и SchoolDirector" />
   </component>
 </project>
