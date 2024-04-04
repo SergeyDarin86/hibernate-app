@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление метода на изменение номера школы для директора через сеттер">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForActorMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelActorMovie/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelActorMovie/MovieNew.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +50,22 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.AppForSchool">
+  <component name="RunManager" selected="Application.AppForActorMovie">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="hibernate-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppForActorMovie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.AppForActorMovie" />
       <module name="hibernate-app" />
       <extension name="coverage">
         <pattern>
@@ -100,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppForActorMovie" />
         <item itemvalue="Application.AppForSchool" />
         <item itemvalue="Application.AppForMovies" />
         <item itemvalue="Application.AppForRelations" />
@@ -126,7 +145,7 @@
       <workItem from="1712057247127" duration="628000" />
       <workItem from="1712061158195" duration="1060000" />
       <workItem from="1712215903307" duration="748000" />
-      <workItem from="1712216665014" duration="4254000" />
+      <workItem from="1712216665014" duration="14228000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -219,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712220349052</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Добавление метода на изменение номера школы для директора через сеттер">
+      <created>1712221104277</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712221104277</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +277,7 @@
     <MESSAGE value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
     <MESSAGE value="Добавлены сущности для практики: School.java и SchoolDirector" />
     <MESSAGE value="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne" />
+    <MESSAGE value="Добавление метода на изменение номера школы для директора через сеттер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление метода на изменение номера школы для директора через сеттер" />
   </component>
 </project>

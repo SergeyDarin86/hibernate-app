@@ -1,6 +1,9 @@
 package org.example.modelSchool;
 
 import jakarta.persistence.*;
+import org.example.modelMovie.Movie;
+
+import java.util.List;
 
 @Entity
 @Table(name = "school")

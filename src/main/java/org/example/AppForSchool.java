@@ -22,7 +22,9 @@ public class AppForSchool {
 
 //        createNewSchoolForExistingDirector(1,session);
 
-        changeSchoolNumberForDirector(1,session);
+//        changeSchoolNumberForDirector(1,session);
+
+        deleteDirector(3, session);
 
         session.getTransaction().commit();
         factory.close();
@@ -68,6 +70,11 @@ public class AppForSchool {
     public static void changeSchoolNumberForDirector(Integer directorId, Session session){
         SchoolDirector director = session.get(SchoolDirector.class, directorId);
         director.getSchool().setSchoolNumber(333);
+    }
+
+    public static void deleteDirector(Integer directorId, Session session){
+        SchoolDirector director = session.get(SchoolDirector.class, directorId);
+        session.remove(director);
     }
 
 }

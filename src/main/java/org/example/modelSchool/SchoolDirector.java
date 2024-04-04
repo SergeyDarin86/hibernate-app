@@ -20,7 +20,7 @@ public class SchoolDirector {
     private Integer age;
 
     @OneToOne(mappedBy = "schoolDirector")
-    @Cascade(value = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @Cascade(value = {CascadeType.PERSIST})
     private School school;
 
     public SchoolDirector() {
