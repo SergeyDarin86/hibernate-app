@@ -1,7 +1,5 @@
 package org.example;
 
-import org.example.modelMovie.Director;
-import org.example.modelMovie.Movie;
 import org.example.modelSchool.School;
 import org.example.modelSchool.SchoolDirector;
 import org.hibernate.Session;
@@ -22,7 +20,9 @@ public class AppForSchool {
 
 //        changeDirectorForSchool(3,session);
 
-        createNewSchoolForExistingDirector(1,session);
+//        createNewSchoolForExistingDirector(1,session);
+
+        changeSchoolNumberForDirector(1,session);
 
         session.getTransaction().commit();
         factory.close();
@@ -63,6 +63,11 @@ public class AppForSchool {
         School school = new School(99);
         school.setSchoolDirector(director);
         session.persist(school);
+    }
+
+    public static void changeSchoolNumberForDirector(Integer directorId, Session session){
+        SchoolDirector director = session.get(SchoolDirector.class, directorId);
+        director.getSchool().setSchoolNumber(333);
     }
 
 }

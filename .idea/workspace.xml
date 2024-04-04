@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавлены сущности для практики: School.java и SchoolDirector">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" afterDir="false" />
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,7 @@
       <workItem from="1712057247127" duration="628000" />
       <workItem from="1712061158195" duration="1060000" />
       <workItem from="1712215903307" duration="748000" />
-      <workItem from="1712216665014" duration="3515000" />
+      <workItem from="1712216665014" duration="4254000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712061782916</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne">
+      <created>1712220349052</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712220349052</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +250,7 @@
     <MESSAGE value="Добавление каскадирования" />
     <MESSAGE value="Добавление изменений в класс Customer&#10;1) добавлен метод addMovie() для упрощенного сохранения в базу с помощью одного метода persist" />
     <MESSAGE value="Добавлены сущности для практики: School.java и SchoolDirector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены сущности для практики: School.java и SchoolDirector" />
+    <MESSAGE value="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne" />
   </component>
 </project>
