@@ -27,8 +27,8 @@ public class AppForActorMovie {
 //            showMoviesForActor(1,session);
 //            addExistingActorForNewMovie(7,session);
 //            deleteActorFromMovie(1,session);
-
-            addMovieForActor(1,session);
+//            addMovieForActor(1,session);
+            showActorsForMovie(2,session);
             session.getTransaction().commit();
         }
 
@@ -61,6 +61,11 @@ public class AppForActorMovie {
     public static void showMoviesForActor(Integer actorId, Session session){
         Actor actor = session.get(Actor.class,actorId);
         System.out.println(actor.getMovies());
+    }
+
+    public static void showActorsForMovie(Integer movieId, Session session){
+        MovieNew movie = session.get(MovieNew.class, movieId);
+        movie.getActors().forEach(actor -> System.out.println(actor));
     }
 
     // в процессе выполнения sql-запросов появляется запрос "delete" - это особенность hibernate

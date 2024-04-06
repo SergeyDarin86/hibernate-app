@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление метода на изменение номера школы для директора через сеттер">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForActorMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelActorMovie/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelActorMovie/MovieNew.java" afterDir="false" />
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Работа с сущностями Actor и MovieNew через таблицу Actor_movie (ManyToMany)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForSchool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelSchool/SchoolDirector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForActorMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForActorMovie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +140,8 @@
       <workItem from="1712057247127" duration="628000" />
       <workItem from="1712061158195" duration="1060000" />
       <workItem from="1712215903307" duration="748000" />
-      <workItem from="1712216665014" duration="14228000" />
+      <workItem from="1712216665014" duration="15768000" />
+      <workItem from="1712394240949" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -245,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712221104277</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Работа с сущностями Actor и MovieNew через таблицу Actor_movie (ManyToMany)">
+      <created>1712248636198</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712248636198</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +281,7 @@
     <MESSAGE value="Добавлены сущности для практики: School.java и SchoolDirector" />
     <MESSAGE value="Работа с сущностями School.java и SchoolDirector.java, связанными между собой OneToOne" />
     <MESSAGE value="Добавление метода на изменение номера школы для директора через сеттер" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление метода на изменение номера школы для директора через сеттер" />
+    <MESSAGE value="Работа с сущностями Actor и MovieNew через таблицу Actor_movie (ManyToMany)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с сущностями Actor и MovieNew через таблицу Actor_movie (ManyToMany)" />
   </component>
 </project>
