@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление нового метода (showActorsForMovie) в AppForActorMovie.java">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Добавление новых методов showDirectorWithMoviesNew и showMovieWithDirectorNew для проверки работы загрузки данных при разных стратегиях Lazy/Eager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" afterDir="false" />
     </list>
@@ -142,7 +142,7 @@
       <workItem from="1712215903307" duration="748000" />
       <workItem from="1712216665014" duration="15768000" />
       <workItem from="1712394240949" duration="3292000" />
-      <workItem from="1712429429941" duration="354000" />
+      <workItem from="1712429429941" duration="3503000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -256,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712394793722</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Добавление новых методов showDirectorWithMoviesNew и showMovieWithDirectorNew для проверки работы загрузки данных при разных стратегиях Lazy/Eager">
+      <created>1712430020392</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712430020392</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +298,7 @@
     <MESSAGE value="Добавление метода на изменение номера школы для директора через сеттер" />
     <MESSAGE value="Работа с сущностями Actor и MovieNew через таблицу Actor_movie (ManyToMany)" />
     <MESSAGE value="Добавление нового метода (showActorsForMovie) в AppForActorMovie.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление нового метода (showActorsForMovie) в AppForActorMovie.java" />
+    <MESSAGE value="Добавление новых методов showDirectorWithMoviesNew и showMovieWithDirectorNew для проверки работы загрузки данных при разных стратегиях Lazy/Eager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление новых методов showDirectorWithMoviesNew и showMovieWithDirectorNew для проверки работы загрузки данных при разных стратегиях Lazy/Eager" />
   </component>
 </project>
