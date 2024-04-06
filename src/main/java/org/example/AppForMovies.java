@@ -2,13 +2,10 @@ package org.example;
 
 import org.example.modelMovie.Director;
 import org.example.modelMovie.Movie;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class AppForMovies {
@@ -41,7 +38,7 @@ public class AppForMovies {
             List<Movie>movies = director.getMovies();
 
             //TODO: подгружаем ленивые сущности с помощью специального метода Hibernate
-            Hibernate.initialize(movies);
+//            Hibernate.initialize(movies);
             session.getTransaction().commit();
 
             // Если у нас загрузка Eager, то мы можем получить данные из связанной таблицы вне сессии
@@ -55,7 +52,10 @@ public class AppForMovies {
              * так происходит потому что Java оптимизирует код и когда она видит, что объект никем не используется
              * она может игнорировать его, в результате мы получим ошибку
              */
-            System.out.println(movies);
+//            System.out.println(movies);
+
+            // метод для открытия второй транзакции
+            showDirectorWithMoviesInSecondTransaction(director,session,factory);
         } finally {
             factory.close();
         }
@@ -150,6 +150,19 @@ public class AppForMovies {
         return director;
     }
 
+    public static void showDirectorWithMoviesInSecondTransaction(Director director, Session session, SessionFactory factory){
+        session = factory.getCurrentSession();
+        session.beginTransaction();
+
+        System.out.println("Внутри второй транзакции");
+        // пристегиваем наш объект ко второй транзакции с помощью метода merge()
+        director = session.merge(director);
+
+        System.out.println(director.getMovies());
+        session.getTransaction().commit();
+        System.out.println("Вне второй транзакции");
+        System.out.println(director.getMovies());
+    }
     // пример загрузки данных Lazy/Eager
     /*
     В данном примере у нас идет загрузка Eager по умолчанию, т.к. связь таблиц ManyToOne
