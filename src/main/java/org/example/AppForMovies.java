@@ -33,7 +33,10 @@ public class AppForMovies {
 //            deleteMovieForDirector(5,session);
 
 //            createNewMovieForDirector(9,session);
-            createNewDirectorWithNewMovies(session);
+//            createNewDirectorWithNewMovies(session);
+
+//            showDirectorWithMoviesNew(1,session);
+            showMovieWithDirectorNew(1,session);
 
             //
             session.getTransaction().commit();
@@ -110,6 +113,24 @@ public class AppForMovies {
         Movie movie = session.get(Movie.class,13);
         director.getMovies().remove(movie);
         session.remove(movie);
+    }
+
+    // пример с загрузкой данных Lazy/Eager
+    public static void showDirectorWithMoviesNew(Integer directorId, Session session){
+        Director director = session.get(Director.class,directorId);
+        System.out.println("Получение директора");
+
+        // получение связанных сущностей лениво
+        System.out.println(director.getMovies());
+        System.out.println("Получение данных из связанной таблицы");
+    }
+
+    // пример загрузки данных Lazy/Eager
+
+    public static void showMovieWithDirectorNew(Integer movieId, Session session){
+        Movie movie = session.get(Movie.class, movieId);
+        System.out.println("Получение фильма");
+        System.out.println(movie.getDirector());
     }
 
 }
