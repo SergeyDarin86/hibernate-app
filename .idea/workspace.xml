@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Использование специального метода Hibernate.initialize()">
+    <list default="true" id="028b018d-c799-4866-a008-d33089de523f" name="Changes" comment="Работа со второй сессией">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppForMovies.java" afterDir="false" />
     </list>
@@ -142,7 +142,8 @@
       <workItem from="1712215903307" duration="748000" />
       <workItem from="1712216665014" duration="15768000" />
       <workItem from="1712394240949" duration="3292000" />
-      <workItem from="1712429429941" duration="4626000" />
+      <workItem from="1712429429941" duration="5108000" />
+      <workItem from="1712511841975" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1711646761783</created>
@@ -270,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712433067384</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Работа со второй сессией">
+      <created>1712434206188</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712434206188</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +315,7 @@
     <MESSAGE value="Добавление нового метода (showActorsForMovie) в AppForActorMovie.java" />
     <MESSAGE value="Добавление новых методов showDirectorWithMoviesNew и showMovieWithDirectorNew для проверки работы загрузки данных при разных стратегиях Lazy/Eager" />
     <MESSAGE value="Использование специального метода Hibernate.initialize()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Использование специального метода Hibernate.initialize()" />
+    <MESSAGE value="Работа со второй сессией" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа со второй сессией" />
   </component>
 </project>

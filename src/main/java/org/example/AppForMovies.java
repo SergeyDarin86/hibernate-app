@@ -150,6 +150,9 @@ public class AppForMovies {
         return director;
     }
 
+    // Пример использования второй транзакции для получения связанных данных из сущности
+    // может потребоваться тогда, когда нам не нужно сразу загружать данные
+    // Например, нам нужны данные только в определенный момент
     public static void showDirectorWithMoviesInSecondTransaction(Director director, Session session, SessionFactory factory){
         session = factory.getCurrentSession();
         session.beginTransaction();
