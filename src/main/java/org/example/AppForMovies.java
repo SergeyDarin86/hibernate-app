@@ -55,7 +55,8 @@ public class AppForMovies {
 //            System.out.println(movies);
 
             // метод для открытия второй транзакции
-            showDirectorWithMoviesInSecondTransaction(director,session,factory);
+//            showDirectorWithMoviesInSecondTransaction(director,session,factory);
+            showDirectorWithMovieByHQL(director,factory);
         } finally {
             factory.close();
         }
@@ -159,6 +160,7 @@ public class AppForMovies {
 
         System.out.println("Внутри второй транзакции");
         // пристегиваем наш объект ко второй транзакции с помощью метода merge()
+        // с помощью него мы можем в любом месте программы подгрузить данные
         director = session.merge(director);
 
         System.out.println(director.getMovies());
@@ -166,6 +168,23 @@ public class AppForMovies {
         System.out.println("Вне второй транзакции");
         System.out.println(director.getMovies());
     }
+
+    // пример кода для получения данных из связанных таблиц,
+    // используя HQL-запрос (он более громоздкий, но тем не менее может пригодиться)
+    public static void showDirectorWithMovieByHQL(Director director, SessionFactory factory){
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+
+        List<Movie>movies = session.createSelectionQuery("select m from Movie m where m.director.id=:directorId", Movie.class)
+                        .setParameter("directorId", director.getId()).getResultList();
+        System.out.println(movies);
+
+        session.getTransaction().commit();
+        // Также мы можем использовать эти полученные данные вне сессии
+        System.out.println("Вне второй сессии");
+        System.out.println(movies);
+    }
+
     // пример загрузки данных Lazy/Eager
     /*
     В данном примере у нас идет загрузка Eager по умолчанию, т.к. связь таблиц ManyToOne
